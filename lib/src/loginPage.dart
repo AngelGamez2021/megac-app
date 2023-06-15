@@ -35,6 +35,10 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 5),
                 child: CustonTextField(
                     hint: "Identificación",
+                    icon: Icon(
+                      Icons.person,
+                      color: Colors.white,
+                    ),
                     obscuredText: false,
                     cursorColor: Colors.grey,
                     borderFocusColor: Colors.white,
@@ -45,7 +49,11 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 5),
                 child: CustonTextField(
                     hint: "Contraseña",
-                    obscuredText: false,
+                    icon: Icon(
+                      Icons.security,
+                      color: Colors.white,
+                    ),
+                    obscuredText: true,
                     cursorColor: Colors.grey,
                     borderFocusColor: Colors.white,
                     labelColor: Color.fromARGB(255, 255, 255, 255)),

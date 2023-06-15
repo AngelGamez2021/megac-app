@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CustonTextField extends StatelessWidget {
-  const CustonTextField({
-    super.key,
-    required this.hint,
-    required this.obscuredText,
-    // required this.controller,
-    // required this.keyboardType = TextInputType.text
-    required this.cursorColor,
-    required this.borderFocusColor,
-    required this.labelColor,
-  });
+  const CustonTextField(
+      {super.key,
+      required this.hint,
+      required this.obscuredText,
+      // required this.controller,
+      // required this.keyboardType = TextInputType.text
+      required this.cursorColor,
+      required this.borderFocusColor,
+      required this.labelColor,
+      required this.icon});
 
   final String hint;
   final bool obscuredText;
@@ -19,6 +19,7 @@ class CustonTextField extends StatelessWidget {
   final Color cursorColor;
   final Color borderFocusColor;
   final Color labelColor;
+  final Icon? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +36,7 @@ class CustonTextField extends StatelessWidget {
           filled: true,
           fillColor: const Color.fromARGB(255, 209, 209, 209).withOpacity(0.5),
           hintStyle: const TextStyle(color: Colors.white),
+          prefixIcon: icon,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(50),
           )),
