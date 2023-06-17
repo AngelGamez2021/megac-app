@@ -29,6 +29,7 @@ class CustonTextField extends StatelessWidget {
       obscureText: obscuredText,
       // keyboardType: keyboardType,
       decoration: InputDecoration(
+          floatingLabelBehavior: FloatingLabelBehavior.never,
           focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(color: borderFocusColor)),
           labelText: hint,
